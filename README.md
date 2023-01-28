@@ -13,9 +13,13 @@ Finally, all of the learned local policies are distilled into a global policy fo
 https://youtu.be/UxRnZcLIe3c
 
 ## Installation
+Optional initial step: create a new python environment with
+`python3.8 -m venv CPD` and activate it with
+`source CPD/bin/activate`. 
+
 ```
 cd ~/code/  # pcode = path where you put the downloaded code
-pip install -r .
+pip install -r requirements.txt
 ```
 
 ## Usage
@@ -23,9 +27,12 @@ pip install -r .
 cd ~/code/scripts  # code = path where you put the downloaded code
 python root_CPD.py --alpha -1 --seed 0
 ```
+- base reinforcement learning methods is Soft Actor Critic (SAC)
 - alpha means policy distillation type
   - alpha = 0 ~ 1: policy distillation with constant rate ( 0 ~ 1 )
   - alpha = -1: policy distillation with optimized rate ( by proposed monotonic policy improvement )
+  - alpha = 0: wihout polici distillation ( SAC with cyclic transition )
+ 
 
 
 
