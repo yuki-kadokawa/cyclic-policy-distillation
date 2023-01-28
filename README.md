@@ -15,7 +15,7 @@ https://youtu.be/UxRnZcLIe3c
 ## Installation
 ```
 cd ~/code/  # pcode = path where you put the downloaded code
-pip install -e .
+pip install -r .
 ```
 
 ## Usage
