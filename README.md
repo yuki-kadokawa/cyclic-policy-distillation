@@ -10,6 +10,7 @@ Then, local policies are learned while cyclically transitioning to sub-domains. 
 Finally, all of the learned local policies are distilled into a global policy for sim-to-real transfer. 
 
 ## Video
+Overview and Experiments of CPD are available as following link.
 https://youtu.be/UxRnZcLIe3c
 
 ## Installation
