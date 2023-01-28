@@ -8,7 +8,7 @@ class GlobalSACAgent(object):
         self.global_field = LocalSACAgent(env, userDefinedSettings)
         self.userDefinedSettings = userDefinedSettings
 
-        self.global_field.domain_num = 999
+        self.global_field.domain_num = 'all'
         self.global_field.set_summary_writer()
         self.summary_counter = 0
         self.global_distillation_counter = 0

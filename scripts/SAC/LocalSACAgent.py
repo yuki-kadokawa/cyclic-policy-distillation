@@ -151,8 +151,8 @@ class LocalSACAgent(object):
         return episode_num
 
     def set_summary_writer(self):
-        self.model_dir = os.path.join(self.userDefinedSettings.LOG_DIRECTORY, 'model', str(self.domain_num))
-        self.summary_dir = os.path.join(self.userDefinedSettings.LOG_DIRECTORY, 'summary', str(self.domain_num))
+        self.model_dir = os.path.join(self.userDefinedSettings.LOG_DIRECTORY, 'model', 'domain_' + str(self.domain_num))
+        self.summary_dir = os.path.join(self.userDefinedSettings.LOG_DIRECTORY, 'summary', 'domain_' + str(self.domain_num))
         self.summaryWriter = SummaryWriter(log_dir=self.summary_dir)
         self.summary_writer_count = 0
         if not os.path.exists(self.model_dir):
