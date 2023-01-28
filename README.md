@@ -13,12 +13,16 @@ Finally, all of the learned local policies are distilled into a global policy fo
 https://youtu.be/UxRnZcLIe3c
 
 ## Installation
-`cd ~/code/  # pcode = path where you put the downloaded code`
-`pip install -e .`
+"""
+cd ~/code/  # pcode = path where you put the downloaded code
+pip install -e .
+"""
 
 ## Usage
-`cd ~/code/scripts  # code = path where you put the downloaded code`
-`python root_CPD.py --alpha -1 --seed 0`
+"""
+cd ~/code/scripts  # code = path where you put the downloaded code
+python root_CPD.py --alpha -1 --seed 0
+"""
 - alpha means policy distillation type
   - alpha = 0 ~ 1: policy distillation with constant rate ( 0 ~ 1 )
   - alpha = -1: policy distillation with optimized rate ( by proposed monotonic policy improvement )
