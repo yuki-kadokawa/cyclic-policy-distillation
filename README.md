@@ -18,7 +18,7 @@ Optional initial step: create a new python environment with
 `source CPD/bin/activate`. 
 
 ```
-cd ~/code/  # pcode = path where you put the downloaded code
+cd ~/code/  # code = path where you put the downloaded code
 pip install -r requirements.txt
 ```
 
@@ -33,6 +33,15 @@ python root_CPD.py --alpha -1 --seed 0
   - alpha = -1: policy distillation with optimized rate ( by proposed monotonic policy improvement )
   - alpha = 0: wihout polici distillation ( SAC with cyclic transition )
  
-
+<!-- ## References
+If you found this repository helpful, please cite:
+```
+@article{kadokawa2022cyclic,
+  title={Cyclic Policy Distillation: Sample-Efficient Sim-to-Real Reinforcement Learning with Domain Randomization},
+  author={Kadokawa, Yuki and Zhu, Lingwei and Tsurumine, Yoshihisa and Matsubara, Takamitsu},
+  journal={arXiv preprint arXiv:2207.14561},
+  year={2022}
+} -->
+```
 
 
