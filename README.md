@@ -3,4 +3,5 @@
 https://youtu.be/UxRnZcLIe3c
 
 ## installation
-[CPD](cpd_architecture.pdf)
+
+![CPD](fig/cpd_architecture.pdf)
