@@ -20,13 +20,14 @@ Optional initial step: create a new python environment with
 `source CPD/bin/activate`. 
 
 ```
-cd ~/code/  # code means path where you put the downloaded code
+git clone https://github.com/yuki-kadokawa/cyclic-policy-distillation.git
+cd cyclic-policy-distillation  # path where you put the downloaded code
 pip install -r requirements.txt
 ```
 
 ## Usage
 ```
-cd ~/code/scripts  # code means path where you put the downloaded code
+cd cyclic-policy-distillation/scripts
 python root_CPD.py --alpha -1 --seed 0
 ```
 - base reinforcement learning methods is Soft Actor Critic (SAC)
@@ -38,5 +39,5 @@ python root_CPD.py --alpha -1 --seed 0
 ## A walk-through of the TensorBoard Output
 You can launch Tensorboard to see the results:
 ```
-tensorboard --logdir=~/code/scripts/logs/Pendulum/CPDwithSAC # code means path where you put the downloaded code
+tensorboard --logdir=cyclic-policy-distillation/scripts/logs/Pendulum/CPDwithSAC
 ```
