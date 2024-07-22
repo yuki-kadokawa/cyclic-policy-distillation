@@ -30,11 +30,11 @@ pip install -r requirements.txt
 cd cyclic-policy-distillation/scripts
 python root_CPD.py --alpha -1 --seed 0
 ```
-- base reinforcement learning methods is Soft Actor Critic (SAC)
+- base reinforcement learning method is Soft Actor Critic (SAC)
 - alpha means policy distillation type
   - alpha = 0 ~ 1: policy distillation with constant rate ( 0 ~ 1 )
-  - alpha = -1: policy distillation with optimized rate ( by proposed monotonic policy improvement )
-  - alpha = 0: wihout polici distillation ( SAC with cyclic transition )
+  - alpha = -1: policy distillation with optimize rate ( by proposed monotonic policy improvement )
+  - alpha = 0: without policy distillation ( SAC with cyclic transition )
  
 ## A walk-through of the TensorBoard Output
 You can launch Tensorboard to see the results:
